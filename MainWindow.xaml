@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:ProgLab3"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <Canvas>
+        <TextBox x:Name="txtFirstName" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="112" Width="120"/>
+        <TextBox x:Name="txtLastName" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="173" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="First Name" Canvas.Left="68" Canvas.Top="82"/>
+        <Label Content="Last Name&#xD;&#xA;" Canvas.Left="80" Canvas.Top="149" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button x:Name="btnSave" Content="Save&#xD;&#xA;" Canvas.Left="80" Canvas.Top="353" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="103" Click="btnSave_Click"/>
+        <ComboBox x:Name="cbBrand" Canvas.Left="201" Canvas.Top="108" Width="177" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top"/>
+        <Label Content="Brand" Canvas.Left="201" Canvas.Top="77"/>
+        <ComboBox x:Name="cbMemory" Canvas.Left="201" Canvas.Top="235" Width="177" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Memory" Canvas.Left="201" Canvas.Top="195" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox Canvas.Left="425" TextWrapping="Wrap" Canvas.Top="153" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Song Quanity" Canvas.Left="425" Canvas.Top="128"/>
+        <ListBox x:Name="lbDisplay" Height="238" Width="158" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="590" Canvas.Top="117" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button x:Name="btnImport" Content="Import Songs&#xD;&#xA;" Canvas.Left="400" Canvas.Top="217" Click="btnImport_Click"/>
+        <Button x:Name="btnExport" Content="Export Songs&#xD;&#xA;" Canvas.Left="485" Canvas.Top="217"/>
+        <Label Content="Remaining memory" Canvas.Left="590" Canvas.Top="85" HorizontalAlignment="Center" VerticalAlignment="Center" Width="158"/>
+        <Label Content="Model&#xA;" Canvas.Left="34" Canvas.Top="216" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtModel" Canvas.Left="34" TextWrapping="Wrap" Canvas.Top="246" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </Canvas>
 </Window>

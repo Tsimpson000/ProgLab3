@@ -21,6 +21,11 @@ namespace ProgLab3
         public abstract double ImportSongs(double amount);
 
         public abstract double DeleteSongs(double amount);
+
+        public override string ToString()
+        {
+            return $"{_name}";
+        }
     }
 
 }

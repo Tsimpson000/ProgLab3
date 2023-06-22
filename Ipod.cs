@@ -33,5 +33,10 @@ namespace ProgLab3
             return currentStorage;
 
         }
+
+        public override string ToString()
+        {
+            return base.ToString() +  $"{_model} {_memory}gb - ";
+        }
     }
 }
